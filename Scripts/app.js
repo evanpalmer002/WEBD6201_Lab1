@@ -3,7 +3,8 @@
 /**
  * Lab 1 app.js
  * Author: Evan Palmer
- * Date: 1/20/2020
+ * Student ID: 100699087
+ * Date Completed: 1/22/2020
  */
 
  //IIFE
@@ -34,15 +35,15 @@
         parentNode.insertBefore(newNavItem, nodeToClone); //insert the new HR node
 
         //Question C
-        let fixedBottom = document.createElement("nav");
-        fixedBottom.setAttribute("class", "navbar fixed-bottom navbar-light bg-light");
-        let anchor = document.createElement("a");
-        anchor.setAttribute("class", "navbar-brand");
-        anchor.textContent = "\u00A9CopyRight 2020";
-        fixedBottom.appendChild(anchor);
-        console.log(fixedBottom);
+        let fixedBottom = document.createElement("nav"); //create a new nav element named fixedBottom
+        fixedBottom.setAttribute("class", "navbar fixed-bottom navbar-light bg-light"); //set the class attribute
+        let anchor = document.createElement("a"); //create a new a element named anchor
+        anchor.setAttribute("class", "navbar-brand"); //set the class attribute
+        anchor.textContent = "\u00A9CopyRight 2020"; //set the text content
+        fixedBottom.appendChild(anchor); //append the a tag to the fixedBottom element
+        console.log(fixedBottom); 
 
-        body.appendChild(fixedBottom);
+        body.appendChild(fixedBottom); //append the new nav bar to the body of the document
     }
 
 
